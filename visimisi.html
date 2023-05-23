@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Polri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar p-4 bg-warning" id="sidebar">
+        <a href="index.html">
+            <img src="other/polri.png" class="mb-5 img-fluid" alt="Logo">
+        </a>
+        
+        <li class="list">
+            <a class="text-dark" href="visimisi.html">
+                <i class="bi bi-house mr-2"></i>
+                Visi dan Misi
+            </a>
+        </li>
+        <li class="list">
+            <a class="text-dark" href="satuankerja.html">
+                <i class="bi bi-newspaper mr-2"></i>
+                Satuan Kerja
+            </a>
+        </li>
+        <li class="list">
+            <a class="text-dark" href="satuanwilayah.html">
+                <i class="bi bi-bicycle mr-2"></i>
+                Satuan Wilayah
+            </a>
+        </li>
+        <li class="list">
+            <a class="text-dark" href="penerimaan.html">
+                <i class="bi bi-person mr-2"></i>
+                Penerimaan Polri
+            </a>
+        </li>
+        <li class="list">
+            <a class="text-dark" href="callcenter.html">
+                <i class="bi bi-telephone mr-2"></i>
+                Call Center 110
+            </a>
+        </li>
+    </div>
+
+    <section class="p-4" id="main-content">
+        <button class="btn btn-warning" id="button-toggle">
+            <i class="bi bi-list"></i>
+        </button>
+
+
+        <div class="container mb-5 bg-light">
+            <h1 class="px-5 pt-5 mx-lg-5">Visi dan Misi Polri</h1>
+            <hr>
+            <div class="row mx-5 mb-5 p-lg-5">
+                <div class="col-lg-3 mb-5">
+                    <img src="other/kapolri.jpeg" alt="Kapolri" width="100%">
+                </div>
+                <div class="col-lg-8 border-left text-dark">
+
+                    <h2>Visi</h2>
+
+                    <p>Terwujudnya Indonesia yang Aman dan Tertib guna mendukung Visi dan Misi Presiden dan Wakil
+                        Presiden : "Indonesia Maju yang Berdaulat, Mandiri, dan Berkepribadian Berlandaskan
+                        Gotong-Royong".</p>
+                    <hr>
+                    <h2>Misi</h2>
+                    <p>Melindungi, mengayomi dan melayani masyarakat dalam memberikan perlindungan bagi segenap bangsa
+                        dan memberikan rasa aman kepada seluruh warga serta mendorong kemajuan budaya yang mencerminkan
+                        kepribadian bangsa; serta menegakkan sistem hukum yang bebas korupsi, bermartabat dan terpercaya
+                        dan menjamin tercapainya lingkungan hidup berkelanjutan</p>
+                    <p>Adapun Janji Presiden (JP) di Polri ialah :</p>
+                    <ol>
+                        <li>penegakkan hukum terhadap kejahatan Premanisme, Lingkungan Hidup, Narkoba, TPPU,
+                            Radikalisme, Terorisma dan Intoleransi serta PPA;</li>
+                        <li>meningkatkan Sinergi dan Kerjasama antar Lembaga penegak hukum dan TNI;</li>
+                        <li>mengembangkan profesionalisme dan kesejahteraan anggota Polri, reformasi birokrasi guna
+                            menekan budaya koruptif dan tindakan yang berlebihan atau kekerasan eksesif;</li>
+                    </ol>
+                    <h2>Tujuan</h2>
+                    <ol>
+                        <li>menjamin terpeliharanya keamanan dan ketertiban masyarakat di seluruh wilayah NKRI;</li>
+                        <li>menegakkan hukum secara berkeadilan;</li>
+                        <li>mewujudkan Polri yang profesional;</li>
+                        <li>modernisasi pelayanan Polri;</li>
+                        <li>menerapkan manajemen Polri yang terintegrasi dan terpercaya.</li>
+                    </ol>
+                    <hr>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <script>
+        // code apabila button di clik
+        document.getElementById("button-toggle").addEventListener("click", () => {
+            //apabila logo button di clik maka akan menggeser
+            document.getElementById("sidebar").classList.toggle("active-sidebar");
+
+            // when the button-toggle is clicked, it will add/remove the active-main-content class
+            document.getElementById("main-content").classList.toggle("active-main-content");
+        });
+    </script>
+
+</body>
+
+</html>
